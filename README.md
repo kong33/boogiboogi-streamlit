@@ -6,11 +6,11 @@ so I built a 3 stage filtering pipeline to clean the data and visualize the resu
 
 ## Pipeline
 
-**Stage 1 — Presence filter**: drops frames where the camera failed to detect a person (`hasPose: false`)
+**Stage 1 | Presence filter**: drops frames where the camera failed to detect a person (`hasPose: false`)
 
-**Stage 2 — IQR outlier removal**: removes angle values that fall outside 1.5× the interquartile range — catches sudden spikes from recognition errors
+**Stage 2 | IQR outlier removal**: removes angle values that fall outside 1.5× the interquartile range — catches sudden spikes from recognition errors
 
-**Stage 3 — Continuity filter**: removes samples where the angle changes too sharply between consecutive frames, which usually indicates a transient misread rather than a real posture shift
+**Stage 3 | Continuity filter**: removes samples where the angle changes too sharply between consecutive frames, which usually indicates a transient misread rather than a real posture shift
 
 ## Dashboard
 
