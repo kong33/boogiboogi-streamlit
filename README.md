@@ -29,3 +29,6 @@ Python, pandas, matplotlib, Streamlit
 
 Sensor data exported from IndexedDB (browser-side storage) of the posture monitoring app.<br/>
 Timestamps stored and displayed as Unix milliseconds, consistent with the original data format.
+
+## Furthermore 
+We are planning to add this filtering logic into our application code.
